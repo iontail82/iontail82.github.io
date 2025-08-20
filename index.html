@@ -1,64 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Iontail - Soluciones de software</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Servicios profesionales e integración digital.">
+  <meta charset="UTF-8" />
+  <title>Iontail — Soluciones de software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Iontail ofrece soluciones de software e integraciones de comunicacion digital para empresas." />
   <meta name="facebook-domain-verification" content="fzfewexct3bczl99kzvuvylggi2rlm" />
-  
   <style>
-    body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 3em;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-    .logo {
-      max-width: 200px;
-      margin-bottom: 1.5em;
-    }
-    .title {
-      font-size: 2.5em;
-      font-weight: bold;
-      color: #1e3a5f;
-    }
-    .subtitle {
-      font-size: 1.2em;
-      margin-top: 0.5em;
-      margin-bottom: 2em;
-    }
-    .contact {
-      font-size: 1em;
-    }
-    a {
-      color: #1e3a5f;
-      text-decoration: none;
-    }
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial;
+         margin:0; color:#222; background:#fafafa}
+    header,main,footer{max-width:920px; margin:0 auto; padding:24px 16px}
+    header{display:flex; align-items:center; gap:16px; padding-top:32px}
+    img.logo{width:72px; height:auto}
+    h1{font-size:1.8rem; margin:0}
+    .tag{color:#334; margin-top:4px}
+    .card{background:#fff; border:1px solid #eee; border-radius:10px; padding:20px; margin:18px 0}
+    h2{font-size:1.2rem; margin:0 0 8px}
+    ul{margin:8px 0 0 18px}
+    a{color:#1e3a5f; text-decoration:none}
+    .cta{margin-top:10px}
+    footer{font-size:.9rem; color:#667; padding-bottom:40px}
+    nav a{margin-right:16px; font-size:.95rem}
   </style>
 </head>
 <body>
-  <img class="logo" src="/logo.png" alt="Iontail Logo">
-  <!--div class="title">Iontail</div-->
-  <div class="subtitle">Soluciones de software</div>
-  <div class="subtitle">Servicios profesionales e integración digital</div>
-  <div class="contact">
-    <p>Contacto:</p>
-    <p><a href="mailto:contacto@iontail.tech">contacto@iontail.tech</a></p>
-  </div>
-  
-  <!-- legal -->
-  <footer style="margin-top:3em; padding:1.5em 0; font-size:12px; color:#777">
-  <div>
-    © <span id="y"></span> Iontail · 
-    <a href="/legal.html" style="color:#777; text-decoration:none">Información legal</a>
-  </div>
-  
-</footer>
-<script>
-  document.getElementById('y').textContent = new Date().getFullYear();
-</script>
-  <!-- legal -->
+  <header>
+    <img class="logo" src="/logo.png" alt="Iontail Logo" />
+    <div>
+      <h1>Iontail</h1>
+      <div class="tag">Soluciones de software e integraciones</div>
+      <nav>
+        <a href="/privacy.html">Privacidad</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Qué hacemos</h2>
+      <p>
+        Desarrollamos soluciones de software e integraciones digitales a medida:
+      </p>
+      <ul>
+        <li>Desarrollo web y backends.</li>
+        <li>Integración de APIs y automatizaciones.</li>
+        <li>Implementaciones con WhatsApp Business Platform (Cloud API).</li>
+      </ul>
+      <div class="cta">
+        Contacto: <a href="mailto:contacto@iontail.tech">contacto@iontail.tech</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Transparencia</h2>
+      <p>
+        Este sitio describe de forma clara nuestros servicios y vías de contacto. Respetamos las políticas de WhatsApp Business y no ofrecemos productos o servicios restringidos.
+      </p>
+      <p>
+        Más información: <a href="/privacy.html">Política de privacidad</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Iontail · <a href="mailto:contacto@iontail.tech">contacto@iontail.tech</a>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>
